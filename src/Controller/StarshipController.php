@@ -18,7 +18,7 @@ class StarshipController extends AbstractController
             throw $this->createNotFoundException('Starship not found');
         }
 
-        return $this->render('/starship/show.html.twig', [
+        return $this->render('starship/show.html.twig', [
             'ship' => $ship,
         ]);
     }
