@@ -1,23 +1,41 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}{% endblock %}
+
 {% block body %}
 <h1>Starshop: your monoploy-busting option for Starship parts!</h1>
 
-
 <div>
-    Browse through {{ starshipCount * 10 }} starships!
+        Browse through {{ ships|length }} starships!
 
-    {% if starshipCount > 200 %}
+    {% if ships|length > 5 %}
         <p>That's a shipload of ships!</p>
     {% endif %}
+</div>
 
 
-       <table>
+<div>
+    <table>
            <tr>
                <th>Name</th>
-               <td>{{ myShip.name }}</td>
+               <a href="{{ path('app_starship_show', {id: myShip.id}) }}">
+               {{ myShip.name }}
+               </a>
+           </tr>
+           <tr>
+               <th>Class</th>
+               <td>{{ myShip.class }}</td>
+           </tr>
+           <tr>
+               <th>Captain</th>
+               <td>{{ myShip.captain }}</td>
+           </tr>
+           <tr>
+               <th>Status</th>
+               <td>{{ myShip.status }}</td>
            </tr>
        </table>
 
 </div>
 {% endblock %}
+

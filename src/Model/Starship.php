@@ -2,7 +2,7 @@
 
 namespace App\Model;
 
-class Startship
+class Starship
 {
     public function __construct(
         private int $id,
