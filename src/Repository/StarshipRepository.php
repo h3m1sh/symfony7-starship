@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Model\Starship;
+use App\Model\StarshipStatusEnum;
 use Psr\Log\LoggerInterface;
 
 class StarshipRepository
@@ -21,70 +22,70 @@ class StarshipRepository
                 'USS Wanderlust (NCC-2024-W)',
                 'Delta Tourist',
                 'Kathryn Journeyway',
-                'under construction'
+                StarshipStatusEnum::COMPLETED
             ),
             new Starship(
                 2,
                 'USS Horizon (NCC-3045-H)',
                 'Nova Explorer',
                 'James Sterling',
-                'active'
+                StarshipStatusEnum::WAITING
             ),
             new Starship(
                 3,
                 'USS Aurora (NCC-2087-A)',
                 'Solar Cruiser',
                 'Lena Orin',
-                'docked'
+                StarshipStatusEnum::PROGRESS
             ),
             new Starship(
                 4,
                 'USS Titanfall (NCC-4091-T)',
                 'Battle Vanguard',
                 'Rico Daelan',
-                'on mission'
+                StarshipStatusEnum::WAITING
             ),
             new Starship(
                 5,
                 'USS Eclipsion (NCC-3102-E)',
                 'Shadow Recon',
                 'Yuki Madera',
-                'active'
+                StarshipStatusEnum::COMPLETED
             ),
             new Starship(
                 6,
                 'USS Skylance (NCC-2120-S)',
                 'Strato Cruiser',
                 'Nolan Vega',
-                'under repair'
+                StarshipStatusEnum::PROGRESS
             ),
             new Starship(
                 7,
                 'USS Pathfinder (NCC-5101-P)',
                 'Frontier Scout',
                 'Aria Thorne',
-                'on mission'
+                StarshipStatusEnum::WAITING
             ),
             new Starship(
                 8,
                 'USS Aetherwind (NCC-3907-A)',
                 'Nebula Hauler',
                 'Gideon Black',
-                'active'
+                StarshipStatusEnum::COMPLETED
             ),
             new Starship(
                 9,
                 'USS Polaris (NCC-1503-P)',
                 'Quantum Skipper',
                 'Selene Idris',
-                'retired'
+                StarshipStatusEnum::WAITING
             ),
             new Starship(
                 10,
                 'USS Celestia (NCC-6609-C)',
                 'Ethereal Voyager',
                 'Darius Quinn',
-                'in drydock'
+                StarshipStatusEnum::PROGRESS
             ),
         ];
     }
