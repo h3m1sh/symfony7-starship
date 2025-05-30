@@ -20,7 +20,7 @@ class MainController extends AbstractController
     {
 
 
-        $ships = $repository->findIncomplete();
+        $ships = $repository->findAll();
         $myShip = $repository->findMyShip();
 
         return $this->render('main/homepage.html.twig', [
