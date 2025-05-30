@@ -85,7 +85,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/doctrine-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php84" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/babdev/pagerfanta-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pagerfanta/core" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pagerfanta/doctrine-orm-adapter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zenstruck/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zenstruck/foundry" />
     </content>
